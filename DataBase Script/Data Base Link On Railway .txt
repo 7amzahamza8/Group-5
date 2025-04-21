@@ -1,0 +1,1 @@
+postgresql://postgres:BrhPaWAOXpWOYCwYtgFQvszsbOgeLfpw@postgres.railway.internal:5432/railway

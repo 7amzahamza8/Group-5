@@ -1,0 +1,24 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- تعريف السيرفليت -->
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>servlets.UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/updateProfile</url-pattern>
+    </servlet-mapping>
+
+    <!-- إعدادات multipart (لرفع الملفات) -->
+    <multipart-config>
+        <max-file-size>2097152</max-file-size> <!-- 2MB -->
+        <max-request-size>4194304</max-request-size> <!-- 4MB -->
+        <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+
+</web-app>
